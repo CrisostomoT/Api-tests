@@ -19,5 +19,4 @@ request(url, function(response) {
 
     // como response estipo string, tenemos que hacer JSON.parse para convertirlo en objeto y poder trabajar
     JSON.parse(response);
-    alert(response);
 });
