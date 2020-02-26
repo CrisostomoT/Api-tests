@@ -6,6 +6,7 @@ const cantidad = prompt('quantity') //document.querySelector('#quantity').value;
 const desde = prompt('from') //document.querySelector('#fromCurrency').value;
 const hacia = prompt('to') //document.querySelector('#toCurrency').value;
 const url = `https://bravenewcoin-v1.p.rapidapi.com/convert?qty=${cantidad}&from=${desde}&to=${hacia}`;
+const resultado = document.querySelector('#result').addEventListener('click');
 
 //La funcion request recibe 2 parametros, la url y el callback
 request(url, function(response) {
@@ -15,5 +16,4 @@ request(url, function(response) {
 
     // como response estipo string, tenemos que hacer JSON.parse para convertirlo en objeto y poder trabajar
     let datos = JSON.parse(response);
-    datos.innerHTML = '';
 });
