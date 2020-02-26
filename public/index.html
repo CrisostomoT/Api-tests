@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>pelis</title>
-  </head>
-  <body>
-    <h1 id="title"></h1>
-    <div class="test"></div>
-    <div id="resultado"></div>
-  </body>
+</head>
+
+<body>
+    <form>
+        <div class="form-row">
+            <div class="col">
+                <input type="number" class="form-control" id="quantity" placeholder="Cantidad a convertir">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="fromCurrency" placeholder="Desde que criptomoneda/moneda">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="toCurrency" placeholder="A que criptomoneda/moneda">
+            </div>
+            <button class="btn btn-succes" id="result">Convert</button>
+        </div>
+    </form>
+</body>
+
 </html>
